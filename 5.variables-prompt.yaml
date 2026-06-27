@@ -4,10 +4,10 @@
   vars_prompt: #using prompt we can give values dynamically
   - name: COURSE
     prompt: please enter the course name
-    private: yes #private=yes will show the values that are being typed by the user
+    private: false #private=false will show the values that are being typed by the user
   - name: DURATION
     prompt: please enter the duration of course
-    private: yes 
+    private: false
   - name: TRAINER #private is not given then the values enterd by user wont be visible at that time
     prompt: please enter the trainer name
   tasks:
