@@ -1,4 +1,4 @@
-- name: variables
+- name: variables using prompt
   hosts: local
   connection: local
   vars_prompt: #using prompt we can give values dynamically

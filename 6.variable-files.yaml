@@ -1,4 +1,4 @@
-- name: variables
+- name: variables fetching from file
   hosts: local
   connection: local
   vars_files: vars.yaml #variables are in vars.yaml file

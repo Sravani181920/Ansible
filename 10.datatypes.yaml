@@ -1,0 +1,22 @@
+- name: datatypes in Ansible
+  hosts: local
+  connection: local
+  vars: 
+    course_name: "Devops with AWS" #string
+    duration: 120hrs #number
+    topics: #list
+    - linux
+    - AWS
+    - Terraform
+    - Ansible
+    live: true #boolean
+    tools: #dictionary
+      ci: jenkins
+      cloud: AWS
+      cmt: Ansible
+  tasks:
+  - name: printing the datatypes
+    ansible.builtin.debug:
+      msg: "the course is {{ course_name }}, duration is {{ duration}} it is live? {{ live }} topics covered are:{{ topics }} and tools covered are: {{ tools }}"
+
+  
