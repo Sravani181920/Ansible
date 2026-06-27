@@ -1,0 +1,14 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars: #play level variable or global variables
+    COURSE: "Devops with AWS"
+    DURATION: 120hrs
+    TRAINER: Ramana
+  tasks:
+  - name: print the variables
+    vars: #task lever variables or local variables
+      COURSE: ansible
+      TRAINER: venkat
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }} and the duration is {{ DURATION }} trained by {{ TRAINER }}"
