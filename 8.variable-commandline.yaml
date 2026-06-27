@@ -5,3 +5,5 @@
   - name: print the variables
     ansible.builtin.debug:
       msg: "course is {{ COURSE }} and the duration is {{ DURATION }} trained by {{ TRAINER }}"
+      
+#ansible-playbook -i inventory.ini 8.variable-commandline.yaml -e "COURSE=Terraform" -e "DURATION=50Hrs" -e "TRAINER=RAMANA" ---command for execuiting in commandline
